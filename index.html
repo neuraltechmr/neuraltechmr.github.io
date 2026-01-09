@@ -67,6 +67,29 @@
             50% { transform: translateY(-20vh) translateX(100px) scale(1.5); }
         }
 
+        /* CEO name & role under image */
+        .ceo-caption {
+            margin-top: 1.2rem;
+            text-align: center;
+        }
+
+        .ceo-caption h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .ceo-caption span {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary);
+            font-style: italic;
+        }
         /* Navigation */
         nav {
             position: fixed;
@@ -984,13 +1007,17 @@
             <h2 class="section-title">Notre CEO</h2>
             <div class="ceo-container">
                 <div class="ceo-image-wrapper">
-                    <!-- Replace "ceo.jpg" with your actual CEO image path -->
-                    <img src="ceo.png" alt="Brahim Sidaty - CEO NeuralTech" class="ceo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="ceo-image-placeholder" style="display: none;">👤</div>
-                </div>
+                  <img src="ceo.png" alt="Brahim Sidaty - CEO NeuralTech" class="ceo-image"
+                       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div class="ceo-image-placeholder" style="display: none;">👤</div>
+
+                  <!-- NEW: Name & role under image -->
+                  <div class="ceo-caption">
+                      <h4>Brahim Sidaty</h4>
+                      <span>Directeur Général & Fondateur</span>
+                  </div>
+              </div>
                 <div class="ceo-content">
-                    <h3>Brahim Sidaty</h3>
-                    <p class="ceo-title">Directeur Général & Fondateur</p>
                     
                     <p> Administrateur chevronné et Chevalier de l’Ordre du Mérite National, Brahim Sidaty dispose d’une expérience de plus de 35 ans au plus haut niveau de l’administration mauritanienne. Tout au long de sa carrière, il a occupé plusieurs postes stratégiques à haute responsabilité, contribuant de manière déterminante à la conduite et à la mise en œuvre de politiques publiques majeures.</p>
                     
@@ -1016,13 +1043,17 @@
             <h2 class="section-title">Our CEO</h2>
             <div class="ceo-container">
                 <div class="ceo-image-wrapper">
-                    <!-- Replace "ceo.png" with your actual CEO image path -->
-                    <img src="ceo.png" alt="Brahim Sidaty - CEO NeuralTech" class="ceo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="ceo-image-placeholder" style="display: none;">👤</div>
-                </div>
+                  <img src="ceo.png" alt="Brahim Sidaty - CEO NeuralTech" class="ceo-image"
+                       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div class="ceo-image-placeholder" style="display: none;">👤</div>
+
+                  <!-- NEW: Name & role under image -->
+                  <div class="ceo-caption">
+                      <h4>Brahim Sidaty</h4>
+                      <span>CEO & Founder</span>
+                  </div>
+              </div>
                 <div class="ceo-content">
-                    <h3>Brahim Sidaty</h3>
-                    <p class="ceo-title">CEO & Founder</p>
                     <p>A seasoned administrator and Knight of the National Order of Merit, Brahim Sidaty brings over 35 years of high-level professional experience within the Mauritanian public administration. Throughout his distinguished career, he has held several strategic leadership positions, playing a key role in the design and implementation of major public policies.</p>
                     
                     <p style="margin-top: 1.5rem;">His professional journey includes senior roles within several core government ministries, notably the Ministry of Health, the Ministry of Civil Service, the Ministry of Economic Affairs, and the Ministry of Culture and Youth. In these capacities, he led large-scale national initiatives and oversaw significant institutional reforms.</p>
